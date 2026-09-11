@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stock Comparator</title>
+  <meta charset="UTF-8">
+  <title>Stock Comparator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hiiiiii Boyzzz this is our Mini-project stock comparator website</h1>
+
+  <h1> Stock Comparator</h1>
+  <p>Search a stock or compare two stocks (Team EquityX)</p>
+
+  <div class="box">
+    <h2>Search Stock</h2>
+    <input type="text" id="stockInput" placeholder="Enter ticker e.g. AAPL">
+    <button onclick="searchStock()">Search</button>
+
+    <div id="stockResult">
+    </div>
+  </div>
+
+  <hr>
+
+  <!--Sction to Compare 2  stocks -->
+  <div class="box">
+    <h2>Compare Stocks</h2>
+    <input type="text" id="stock1" placeholder="Stock 1 e.g. AAPL">
+    <input type="text" id="stock2" placeholder="Stock 2 e.g. MSFT">
+    <button onclick="compareStocks()">Compare</button>
+
+    <div id="compareResult">
+      <p>Comparison feature coming soon...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

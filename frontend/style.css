@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #1a237e;
+}
+
+.box {
+  background-color: white;
+  width: 60%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  width: 200px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #1a237e;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #3949ab;
+}
+
+#stockResult, #compareResult {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.stat {
+  padding: 4px 0;
+}
