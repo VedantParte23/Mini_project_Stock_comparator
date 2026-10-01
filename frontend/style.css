@@ -46,3 +46,75 @@ button:hover {
 .stat {
   padding: 4px 0;
 }
+/* ===== Stock Comparator UI Improvements ===== */
+
+body {
+    background: #f4f7fb;
+    color: #222;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.box {
+    max-width: 750px;
+    width: 90%;
+    margin: 25px auto;
+    padding: 30px;
+    background: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.box h2 {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    margin: 5px;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+#stockResult,
+#compareResult {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .box {
+        width: 85%;
+        padding: 20px;
+    }
+
+    input {
+        width: 80%;
+    }
+
+    button {
+        margin-top: 8px;
+    }
+}
