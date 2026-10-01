@@ -1,120 +1,218 @@
+/* =========================================
+   STOCK COMPARATOR - DARK THEME
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   margin: 0;
-  padding: 20px;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
   text-align: center;
 }
 
-h1 {
-  color: #1a237e;
-}
-
-.box {
-  background-color: white;
-  width: 60%;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-input {
-  padding: 8px;
-  margin: 5px;
-  width: 200px;
-}
-
-button {
-  padding: 8px 16px;
-  background-color: #1a237e;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-button:hover {
-  background-color: #3949ab;
-}
-
-#stockResult, #compareResult {
-  margin-top: 15px;
-  text-align: left;
-}
-
-.stat {
-  padding: 4px 0;
-}
-/* ===== Stock Comparator UI Improvements ===== */
-
-body {
-    background: #f4f7fb;
-    color: #222;
-    font-family: Arial, sans-serif;
-}
+/* =========================================
+   MAIN HEADING
+   ========================================= */
 
 h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+  margin: 10px 0 8px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #f8fafc;
+  letter-spacing: -0.5px;
 }
 
-.box {
-    max-width: 750px;
-    width: 90%;
-    margin: 25px auto;
-    padding: 30px;
-    background: white;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+/* Subtitle */
+
+body > p {
+  margin: 0 0 35px;
+  color: #94a3b8;
+  font-size: 16px;
 }
+
+/* =========================================
+   MAIN CARDS
+   ========================================= */
+
+.box {
+  width: 90%;
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 32px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+/* Card heading */
 
 .box h2 {
-    margin-bottom: 20px;
+  margin: 0 0 25px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #f1f5f9;
 }
+
+/* =========================================
+   INPUT FIELDS
+   ========================================= */
 
 input {
-    padding: 12px;
-    margin: 5px;
-    width: 220px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
+  width: 240px;
+  height: 44px;
+  padding: 0 14px;
+  margin: 5px;
+  border: 1px solid #475569;
+  border-radius: 7px;
+  background-color: #0f172a;
+  color: #f8fafc;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease;
 }
+
+/* Placeholder */
+
+input::placeholder {
+  color: #64748b;
+}
+
+/* Input focus */
+
+input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
 
 button {
-    padding: 12px 20px;
-    border-radius: 6px;
-    font-size: 15px;
-    transition: 0.2s;
+  height: 44px;
+  padding: 0 22px;
+  margin: 5px;
+  border: none;
+  border-radius: 7px;
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
 }
 
+/* Button hover */
+
 button:hover {
-    transform: translateY(-2px);
+  background-color: #3b82f6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.25);
 }
+
+/* Button click */
+
+button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* =========================================
+   RESULT SECTIONS
+   ========================================= */
 
 #stockResult,
 #compareResult {
-    margin-top: 20px;
-    padding: 10px;
+  margin-top: 25px;
+  padding: 18px;
+  min-height: 20px;
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 8px;
+  text-align: left;
 }
 
+/* Result text */
+
+#stockResult p,
+#compareResult p {
+  margin: 5px 0;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* =========================================
+   STATISTICS
+   ========================================= */
+
+.stat {
+  padding: 9px 0;
+  border-bottom: 1px solid #334155;
+}
+
+.stat:last-child {
+  border-bottom: none;
+}
+
+/* =========================================
+   HORIZONTAL LINE
+   ========================================= */
+
+hr {
+  width: 90%;
+  max-width: 800px;
+  margin: 35px auto;
+  border: none;
+  border-top: 1px solid #334155;
+}
+
+/* =========================================
+   MOBILE RESPONSIVE
+   ========================================= */
+
 @media (max-width: 600px) {
-    h1 {
-        font-size: 30px;
-    }
 
-    .box {
-        width: 85%;
-        padding: 20px;
-    }
+  body {
+    padding: 25px 10px;
+  }
 
-    input {
-        width: 80%;
-    }
+  h1 {
+    font-size: 30px;
+  }
 
-    button {
-        margin-top: 8px;
-    }
+  body > p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  .box {
+    width: 95%;
+    padding: 25px 15px;
+  }
+
+  .box h2 {
+    font-size: 20px;
+  }
+
+  input {
+    width: 90%;
+    margin: 6px 0;
+  }
+
+  button {
+    width: 90%;
+    margin: 6px 0;
+  }
+
+  hr {
+    width: 90%;
+    margin: 25px auto;
+  }
 }
